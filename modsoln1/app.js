@@ -9,7 +9,9 @@
         $scope.CheckMenu=function(){
             var menus=$scope.menu;
             menus=menus.split(',');
-            if(menus.length<=3){
+            if(menus.length===0){
+                $scope.description="Please Enter the data first!;
+            } else if(menus.length<=3){
                 $scope.description="Enjoy!";
             } else{
                 $scope.description="Too much";
