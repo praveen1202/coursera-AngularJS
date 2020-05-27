@@ -9,10 +9,10 @@
         $scope.CheckMenu=function(){
             var menus=$scope.menu;
             menus=menus.split(',');
-            if(menus.length>=4){
-                $scope.description="Too much";
-            } else{
+            if(menus.length<=3){
                 $scope.description="Enjoy!";
+            } else{
+                $scope.description="Too much";
             }
         }
     }
