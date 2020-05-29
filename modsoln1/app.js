@@ -10,7 +10,6 @@
           var menus=$scope.menu;
           if(menus){
             menus=menus.split(',');
-            return menu.length>0;
             if(menus.length<=3){
               $scope.description="Enjoy!";
             } else{
